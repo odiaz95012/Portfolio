@@ -31,6 +31,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "tvVuezAyzU102NlbS",
+            });
+        })();
+    </script>
 </head>
 
 
@@ -179,53 +188,61 @@
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute"
                                 style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software Engineer Fellow</h5>
+                            <p class="mb-2"><strong>Headstarter AI</strong> | <small>July 2024 - Present</small></p>
+                            <p>- Participating in a 7 week fellowship where I am creating 5 projects in 5 weeks using modern day AI techniques.</p>
+                            <p>- Collaborating and interacting with my team and other fellows daily.</p>
+                            <p>- Will be working with a start-up company alongside my team to implement backlog features.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Full-Stack Software Engineer </h5>
                             <p class="mb-2"><strong>PopcornPicks</strong> | <small>Feb 2024 - May 2024</small></p>
                             <p>- Created a personalized movie recommendation system using user preference collection
                                 techniques with Next.js, Tailwind, Spring Boot, and Neo4j.</p>
+                        </div>
 
-                            <div class="position-relative mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute"
-                                    style="top: 2px; left: -32px;"></i>
-                                <h5 class="font-weight-bold mb-1">Full-Stack Software Engineer </h5>
-                                <p class="mb-2"><strong>SongSnap</strong> | <small>Sep 2023 - Dec 2023</small></p>
-                                <p>- Crafted a dynamic full-stack social media platform, centered around music sharing,
-                                    with React, Express, and MySQL.</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute"
-                                    style="top: 2px; left: -32px;"></i>
-                                <h5 class="font-weight-bold mb-1">Full-Stack Software Engineer </h5>
-                                <p class="mb-2"><strong>Hoken Online Bank</strong> | <small>Aug 2023 - Nov 2023</small>
-                                </p>
-                                <p>- Developed an online banking platform with the ability to search for nearby Chase
-                                    ATMs, conduct basic banking transactions (e.g. deposits, withdrawals, trasnfers),
-                                    and mobile check deposits using React, Typescript, Flask, MySQL, and Docker.</p>
-                                </p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute"
-                                    style="top: 2px; left: -32px;"></i>
-                                <h5 class="font-weight-bold mb-1">Software Engineer Intern</h5>
-                                <p class="mb-2"><strong>CTI-CodeDay</strong> | <small>June 2022 - Aug 2022</small></p>
-                                <p>- Contributed to the CodeCheck open-source project, an anonymous auto grader for
-                                    instructors.</p>
-                                <p>- Mentored and supervised by Cay Horstmann, Professor at PFH Private Hochschule
-                                    Göttingen.</p>
-                                <p>- Created a local file system in Java, using OOP component based architecture that
-                                    enabled students to save, retrieve, and edit their work locally on command.
-                                </p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <i class="far fa-dot-circle text-primary position-absolute"
-                                    style="top: 2px; left: -32px;"></i>
-                                <h5 class="font-weight-bold mb-1">Computer Science Tutor</h5>
-                                <p class="mb-2"><strong>Hartnell College</strong> | <small>Aug 2021 - Dec 2021</small>
-                                </p>
-                                <p>- Assisted students in calculus, programming in C++, and computer architecture.</p>
-                                <p>- Designed lesson plans and led group tutoring sessions.</p>
-                            </div>
-
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Full-Stack Software Engineer </h5>
+                            <p class="mb-2"><strong>SongSnap</strong> | <small>Sep 2023 - Dec 2023</small></p>
+                            <p>- Crafted a dynamic full-stack social media platform, centered around music sharing,
+                                with React, Express, and MySQL.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Full-Stack Software Engineer </h5>
+                            <p class="mb-2"><strong>Hoken Online Bank</strong> | <small>Aug 2023 - Nov 2023</small>
+                            </p>
+                            <p>- Developed an online banking platform with the ability to search for nearby Chase
+                                ATMs, conduct basic banking transactions (e.g. deposits, withdrawals, trasnfers),
+                                and mobile check deposits using React, Typescript, Flask, MySQL, and Docker.</p>
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software Engineer Intern</h5>
+                            <p class="mb-2"><strong>CTI-CodeDay</strong> | <small>June 2022 - Aug 2022</small></p>
+                            <p>- Contributed to the CodeCheck open-source project, an anonymous auto grader for
+                                instructors.</p>
+                            <p>- Mentored and supervised by Cay Horstmann, Professor at PFH Private Hochschule
+                                Göttingen.</p>
+                            <p>- Created a local file system in Java, using OOP component based architecture that
+                                enabled students to save, retrieve, and edit their work locally on command.
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Computer Science Tutor</h5>
+                            <p class="mb-2"><strong>Hartnell College</strong> | <small>Aug 2021 - Dec 2021</small>
+                            </p>
+                            <p>- Assisted students in calculus, programming in C++, and computer architecture.</p>
+                            <p>- Designed lesson plans and led group tutoring sessions.</p>
                         </div>
                     </div>
                 </div>
@@ -339,7 +356,7 @@
                 <div class="col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-mobile service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Apps Design</h4>
+                        <h4 class="font-weight-bold m-0">Mobile Development</h4>
                     </div>
                     <p>I also work in mobile development, specializing in creating high-quality apps
                         that provide exceptional user experiences. My expertise includes working with React Native,
@@ -493,11 +510,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
+                        
                             <div class="control-group">
                                 <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
                                     required="required"
@@ -505,7 +518,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                <button class="btn btn-outline-primary" type="submit" onsubmit="sendMail()" id="sendMessageButton">Send
                                     Message</button>
                             </div>
                         </form>
@@ -554,9 +567,6 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

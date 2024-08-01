@@ -115,3 +115,43 @@
     
 })(jQuery);
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        sendMail();
+    });
+});
+
+function sendMail() {
+    let params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+    if (params.name === '' || params.email === '' || params.message === '') {
+        alert('Please fill all the fields.');
+        return;
+    }
+
+    const serviceID = "service_jgxl1si";
+    const templateID = "template_qtkzv1p";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(function (response) {
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+            console.log(response);
+            alert('Your message has been sent successfully!');
+        })
+        .catch(function (error) {
+            console.log(error);
+            alert('Oops! Something went wrong. Please try again later.');
+        });
+}
+
+
